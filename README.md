@@ -19,8 +19,10 @@ State
 Manage Component Data
 When the state values changes, the UI Re-Renders.
 
+Consists of 2 parts (getting, setting)
 
-
+1)UseState
+2)UseEffect
 
 
 
