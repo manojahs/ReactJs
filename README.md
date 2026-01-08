@@ -17,7 +17,7 @@ DeSerialization : convert back from json to object type
 State
 ---------
 Manage Component Data
-
+When the state values changes, the UI Re-Renders.
 
 
 
