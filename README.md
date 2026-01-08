@@ -9,6 +9,7 @@ EsLint
 Prettier
 
 npx create-react-app moviedux 
+npm start
 
 
 
