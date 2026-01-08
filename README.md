@@ -14,6 +14,9 @@ npm start
 Serialization : convert object type to json type(data storing type)
 DeSerialization : convert back from json to object type
 
+State
+---------
+Manage Component Data
 
 
 
