@@ -24,6 +24,10 @@ Consists of 2 parts (getting, setting)
 1)UseState
 2)UseEffect
 
+Use Props
+------------
+Use for Event Handling , to pass data ,functions to component
+You can pass props to nested component "Props Drilling"
 
 
 
