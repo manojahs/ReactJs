@@ -3,6 +3,15 @@
 Visual Studio Code
 Node Js
 
+React Js is a javascript library . its single page app, and client side rendering
+
+React js having virutal dom whenever u make state,prop changes only those changes will compare and replace in Main dom so whole page reloading will not happens
+OR
+React keeps a Virtual DOM (an in-memory representation of the UI).
+When state/props change, React re-renders the component tree to produce a new Virtual DOM.
+React then diffs (compares) the new vs. previous Virtual DOM and computes the minimal set of changes.
+Finally, React updates the real DOM (often called “main DOM”) with only those necessary changes (reconciliation + commit).
+
 Extension
 ------------
 EsLint
