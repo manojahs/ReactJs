@@ -92,6 +92,57 @@ const secondName ={
 
 export default App
 
+Or
+
+By considering it in Array of objects
+
+import './App.css'
+
+function Book({name,age,children})
+{
+
+  return <>
+  <h1> {name} </h1><h1>{age}</h1>
+   {children}
+  <h1>Namma MicroDegree</h1>
+   </>
+}
+
+
+function App() {
+
+const BookList=[
+  {
+      name:"Manoj",
+      age:27  
+  },
+  {
+      name:"Nikki",
+      age:40
+  }
+]
+
+
+  return (
+    
+    <>
+    {
+     BookList.map((book)=>
+      {
+        return <Book name={book.name} age={book.age}/>
+      }
+    )
+    }
+   
+    </>
+  )
+}
+
+export default App
+
+
+
+
 
 UseReducer
 ------------
