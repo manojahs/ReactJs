@@ -140,10 +140,6 @@ const BookList=[
 
 export default App
 
-
-
-
-
 UseReducer
 ------------
 
@@ -152,6 +148,36 @@ The useReducer hook is a built-in React hook that provides an alternative to use
 State logic is complex (e.g., involves multiple sub-values or decisions).
 The next state depends on the previous state.
 You want a more predictable and maintainable way to update state—especially as your application grows.
+
+React Hooks
+------------
+Use State- This is state management hooks we can change the state dynamically
+
+ex: title will be Manoj after button click title name will get change as Kumar
+
+import logo from "./logo.svg";
+import "./App.css";
+import { useState } from "react";
+
+function App() {
+  const [state, setState] = useState("Manoj");
+
+  function handleClick(e) {
+    setState("Kumar");
+  }
+
+  return (
+    <div>
+      <h1>{state}</h1>
+      <button type="button" value={state} onClick={handleClick}>
+        Click Me
+      </button>
+    </div>
+  );
+}
+
+export default App;
+
 
 
 
