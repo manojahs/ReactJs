@@ -48,6 +48,30 @@ Use Props
 Use for Event Handling , to pass data ,functions to component
 You can pass props to nested component "Props Drilling"
 
+Props Destructure
+-------------------
+
+
+import './App.css'
+
+function Book({name,age})
+{
+  return <h1> {name} its My book and my age is {age}</h1>
+}
+
+function App() {
+
+  return (
+    <>
+    <Book name="Manoj" age="27"/>
+    <h1>Micro Degree</h1>
+    </>
+  )
+}
+
+export default App
+
+
 UseReducer
 ------------
 
