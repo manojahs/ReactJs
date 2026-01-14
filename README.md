@@ -52,19 +52,40 @@ Props Destructure
 -------------------
 
 
+
 import './App.css'
 
-function Book({name,age})
+function Book({name,age,children})
 {
-  return <h1> {name} its My book and my age is {age}</h1>
+
+  return <>
+  <h1> {name} </h1>
+  <h1>{age}</h1>
+   {children}
+  <h1>Namma MicroDegree</h1>
+   </>
 }
+
 
 function App() {
 
+const firstName ={
+  name:"Manoj",
+  age:27  
+}
+
+const secondName ={
+  name:"Nikki",
+  age:40
+}
+
+
   return (
+    
     <>
-    <Book name="Manoj" age="27"/>
-    <h1>Micro Degree</h1>
+    <Book name={firstName.name} age={firstName.age}/>
+    <Book name={secondName.name} age={secondName.age}/>
+    <Book name="kamal">This book is Awesome</Book>
     </>
   )
 }
