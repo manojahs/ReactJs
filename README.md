@@ -12,6 +12,16 @@ When state/props change, React re-renders the component tree to produce a new Vi
 React then diffs (compares) the new vs. previous Virtual DOM and computes the minimal set of changes.
 Finally, React updates the real DOM (often called “main DOM”) with only those necessary changes (reconciliation + commit).
 
+React always returns a single Element
+
+Babel - JS compiler
+-------
+Whenever you will create the React app basically babel gets created
+Whenever u write a jsx code babel converts that code into Browser Understandable code that is JS
+
+Converts JSX to JavaScript
+Example: <h1>Hello</h1> becomes regular JavaScript code that React can run.
+
 Extension
 ------------
 EsLint
