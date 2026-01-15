@@ -204,7 +204,7 @@ If its having array as 2nd param then it runs only once
 
 If there are so many components then ur useeffect should work only for one specific component then u can use that state in the array. this kind of use affect array we call it as Dependency array. whenever count value changes use effect will print the console data 
 
-
+-> In one component u can add many UseEffect hooks
 
 
 ```
