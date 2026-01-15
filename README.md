@@ -182,7 +182,15 @@ UseEffect
 ---------
 This is the hook we ll be using it in Re-Render operation 
 
+  useEffect(() => {
+    console.log(data);
+  });
+If its having only function then its prints for reach re-render
 
+  useEffect(() => {
+    console.log(data);
+  }, []);
+If its having array as 2nd param then it runs only once
 
 
 
