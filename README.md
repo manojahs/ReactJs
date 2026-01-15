@@ -178,7 +178,9 @@ function App() {
 
 export default App;
 
-
+UseEffect
+---------
+This is the hook we ll be using it in Re-Render operation 
 
 
 
