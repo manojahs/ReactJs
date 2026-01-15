@@ -186,13 +186,23 @@ This is the hook we ll be using it in Re-Render operation
     console.log(data);
   });
 If its having only function then its prints for reach re-render
-
+-------------------------
   useEffect(() => {
     console.log(data);
   }, []);
 If its having array as 2nd param then it runs only once
+-------------------------------
+ const [count, setCount] = useState(0);
 
+  const increaseValue = () => {
+    setCount(count + 1);
+  };
 
+  useEffect(() => {
+    console.log(data);
+  }, [count]);
+
+If there are so many components then ur useeffect should work only for one specific component then u can use that state in the array. this kind of use affect array we call it as Dependency array. whenever count value changes use effect will print the console data 
 
 
 
