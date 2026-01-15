@@ -234,6 +234,52 @@ function App() {
 
 we cannot add if or else condition in return statement that is why we use Ternary Operator
 
+React Forms
+-----------
+
+Basically we use for submit the form or page
+
+import logo from "./logo.svg";
+import "./App.css";
+import { useState } from "react";
+
+function App() {
+  const [name, setName] = useState("");
+  const [age, setAge] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(name + " " + age);
+  };
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+        />
+        <label htmlFor="age">Age</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          value={age}
+          onChange={(e) => setAge(e.target.value)}
+        />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+}
+
+export default App;
 
 
 
