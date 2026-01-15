@@ -180,7 +180,8 @@ export default App;
 
 UseEffect
 ---------
-This is the hook we ll be using it in Re-Render operation 
+->This is the hook we ll be using it in Re-Render operation
+->Main thing we use it for Fetching the data 
 
   useEffect(() => {
     console.log(data);
