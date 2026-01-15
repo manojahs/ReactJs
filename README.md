@@ -207,5 +207,29 @@ If there are so many components then ur useeffect should work only for one speci
 
 -> In one component u can add many UseEffect hooks
 
+how to written multiple return statement
+-------------------------------------
+Here comes Conditional Rendering 
+
+function App() {
+  const [loading, setLoading] = useState(false);
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+  return <div>Not Loading..</div>;
+}
+
+Short Circuit Evaluation
+--------------------------
+const [text, setText] = useState("microdegree");
+const firstName = text || "Guest"; //microdegree in OR Condition
+const lastName = text && "Guest"; //Guest in AND Condition
+
+
+
+
+
+
+
 
 ```
