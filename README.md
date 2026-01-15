@@ -281,6 +281,68 @@ function App() {
 
 export default App;
 
+------------------------------------------
+React Route
+-------
+Mainly we for Home , About , Contact for different navigation path we use Route
+
+npm install react-router-dom
+npm start
+
+import logo from "./logo.svg";
+import "./App.css";
+import { useState } from "react";
+import Home from "./Home.js";
+import Abouts from "./About.js";
+import Contact from "./Contact.js";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+function App() {
+  return (
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/home" Component={Home} />
+          <Route path="/about" Component={Abouts} />
+          <Route path="/contact" Component={Contact} />
+        </Routes>
+      </Router>
+    </div>
+  );
+}
+
+export default App;
+
+----------------------------------------
+
+Route-Link
+--------------
+Imported Link Tag and we need to use to to give the Link Path
+
+import { Link } from "react-router-dom";
+
+export default function Home() {
+  return (
+    <div>
+      <ul>
+        <li>
+          <Link to="/"> Home </Link>
+        </li>
+        <li>
+          <Link to="/about"> About </Link>
+        </li>
+        <li>
+          <Link to="/contact"> Contact </Link>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+
+
+
+
 
 
 
