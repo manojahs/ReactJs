@@ -225,7 +225,14 @@ const [text, setText] = useState("microdegree");
 const firstName = text || "Guest"; //microdegree in OR Condition
 const lastName = text && "Guest"; //Guest in AND Condition
 
+Ternary Operator
+-------------------
+function App() {
+  const [value, setValue] = useState("");
+  return <div>{value ? "Value is there" : "Empty String"}</div>;
+}
 
+we cannot add if or else condition in return statement that is why we use Ternary Operator
 
 
 
