@@ -380,6 +380,9 @@ function Comments({ userInfo }) {
 }
 export default App;
 
+Reason to Use UseContext
+------------------------
+Prop drilling is when you pass data (props) from a top component to a deeply nested component through several intermediate components that don’t actually need the data—only to “carry it along.”
 
 
 
