@@ -339,6 +339,46 @@ export default function Home() {
   );
 }
 
+React Context
+-----------------
+React Context is React’s built-in way to pass data (state + functions) through a component tree without “prop drilling”—useful when many nested components need the same value (e.g., theme, locale, current user, feature flags).
+
+import logo from "./logo.svg";
+import "./App.css";
+
+function App() {
+  const userInfo = {
+    username: "Manoj",
+    isAdmin: true,
+  };
+
+  return (
+    <div>
+      <h1>Post Title</h1>
+      <Post userInfo={userInfo} />
+    </div>
+  );
+}
+
+function Post({ userInfo }) {
+  return (
+    <div>
+      <h1>Post Comments</h1>
+
+      <Comments userInfo={userInfo} />
+    </div>
+  );
+}
+
+function Comments({ userInfo }) {
+  return (
+    <div>
+      <h1>{userInfo.username}</h1>
+      <button></button>
+    </div>
+  );
+}
+export default App;
 
 
 
