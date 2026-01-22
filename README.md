@@ -390,8 +390,9 @@ React Vite Version 19
 
 npm create vite@latest
 
-npx vite
+npx vite/npm run dev
 
+npm run build/npx vite build -> it will create dist file
 
 
 
