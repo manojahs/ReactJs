@@ -385,6 +385,16 @@ Reason to Use UseContext
 Prop drilling is when you pass data (props) from a top component to a deeply nested component through several intermediate components that don’t actually need the data—only to “carry it along.”
 
 
+React Vite Version 19
+----------------------
+
+npm create vite@latest
+
+npx vite
+
+
+
+
 
 
 
