@@ -394,8 +394,17 @@ npx vite/npm run dev
 
 npm run build/npx vite build -> it will create dist file
 
+Consider there are 2 env file
+1)Dev - VITE_API_URL = "localhost:3000/api"
+2)Production - VITE_API_URL = "https://myserver.com/api"
 
+to get the env variable
+---------------------
+  const apiUrl = import.meta.env.VITE_API_URL;
 
+To run the application
+1)npm run dev - Development
+2)npm run preview - Production 
 
 
 
