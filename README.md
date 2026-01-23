@@ -406,8 +406,12 @@ To run the application
 1)npm run dev - Development
 2)npm run preview - Production 
 
+Unit Testing
+----------------------
+npm install -D vitest @testing-library/react @testing-library/jest-dom
 
-
+vitest
+jtest
 
 
 ```
