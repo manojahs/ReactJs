@@ -416,4 +416,14 @@ vitest
 jtest
 
 
+UseRef
+-------
+Useref doesnot cause re-render when value changes when u want to component to remember some information but you dont want that information to trigger a new render
+
+helpful
+------------
+1) Managing timer and Interval
+2)Handling focus , transition & Animation
+3)Interacting with DOM Elements 
+
 ```
