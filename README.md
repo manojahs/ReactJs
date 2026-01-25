@@ -343,6 +343,8 @@ React Context
 -----------------
 React Context is React’s built-in way to pass data (state + functions) through a component tree without “prop drilling”—useful when many nested components need the same value (e.g., theme, locale, current user, feature flags).
 
+Here we will Use useContext and CreateContext
+
 import logo from "./logo.svg";
 import "./App.css";
 
